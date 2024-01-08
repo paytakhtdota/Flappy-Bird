@@ -62,7 +62,8 @@ const clickHandler = function () {
 
 document.addEventListener("click", clickHandler);
 document.addEventListener("keydown", (e) => {
-    if (e.keycode == 32) {
+    if (e.which  == 32) {
+        console.log("space");
         clickHandler();
     }
 })
